@@ -1,3 +1,4 @@
+
 /*letreiro*/
 function typeWrite(elemento) {
 		const textoArray = elemento.innerHTML.split('');
@@ -72,3 +73,39 @@ $(document).ready(function() {
     });
 });
 
+/*SLIDE*/
+
+$(document).ready(function() {
+    var slideWidth = $('.item').outerWidth(); // Largura de cada item do slider
+    var totalSlides = $('.item').length; // Número total de slides
+    var currentSlide = 0; // Inicializa o slide atual
+
+    // Função para animar a rolagem
+    function animateSlide() {
+        var movePosition = -slideWidth * currentSlide;
+        $('.slide-container').css({
+            'transform': 'translateX(' + movePosition + 'px)',
+            'transition': 'transform 0.5s ease' // Adiciona a transição diretamente no jQuery
+        });
+    }
+
+    // Evento para o botão "Próximo"
+    $('.next').click(function() {
+        if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0; // Retorna ao primeiro slide
+        }
+        animateSlide();
+    });
+
+    // Evento para o botão "Anterior"
+    $('.prev').click(function() {
+        if (currentSlide > 0) {
+            currentSlide--;
+        } else {
+            currentSlide = totalSlides - 1; // Vai para o último slide
+        }
+        animateSlide();
+    });
+});
