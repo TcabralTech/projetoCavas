@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+.clear{
+	clear: both;
+}
+
+.w40{
+	width: 40%;
+}
+
+.vinteecinco{
+	max-width: 25%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.whatsapp{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.whatsapp img{
+	width: 70px;
+	transition: transform 0.3s ease-in-out;
+}
+.whatsapp img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem para 120% */
+}
+
+/*menu--------------------------------------*/
+.menu{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(1, 25, 54, 0.8);
+	z-index: 2;
+
+}
+.menu .logo{
+	float: left;
+	max-width: 40%;
+	margin-left: 30px;
+}
+.menu .logo img{
+	width: 120px;
+}
+.menu .menu-opcoes{
+	float: right;
+	list-style-type: none;
+}
+.menu .menu-opcoes ul{
+	list-style-type: none;
+}
+.menu .menu-opcoes li{
+	list-style-type: none;
+	font-size: 15px;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+.menu .menu-opcoes a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.slides{
+	width: 100%;
+	z-index: 1;
+}
+.slide{
+	width: 100%;
+}
+.slide img{
+	width: 100%;
+	height: 850px;
+}
+.slide .letreiro{
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	text-align: center;
+	color: #011936;
+	font-size: 30px;
+}
+.contact{
+	cursor: pointer;
+	margin-top: 30px;
+	border: 2px solid #011936;
+	padding: 30px;
+	text-align: center;
+	justify-content: center;
+	font-weight: 1000;
+	font-size: 20px;
+}
+.contact a{
+	color: #011936;
+}
+.servicos{
+	margin-top: -5px;
+	background-color: #011936;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	padding: 10px 20px;
+	justify-content: center;
+
+}
+.servicos div{
+	padding: 20px 60px;
+	color: white;
+	text-align: center;
+}
+.servicos i{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.servicos div h2{
+	margin-top: 10px;
+}
+
+.servicos div p{
+	margin-top: 10px;
+	text-align: justify;
+	line-height: 2;
+	max-width: 400px;
+	margin-bottom: 50px;
+}
+
+.list{
+	border-top: 1px solid black;
+	background-color: #011936;
+	width: 100%;
+	display: block;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	padding: 0 0 100px 0;
+}
+.list h2{
+	padding: 50px 0 20px 0;
+}
+.list p{
+	justify-content: center;
+	max-width: 1800px;
+	line-height: 2;
+	text-align: justify;
+	transform:translate(-50%, 0);
+	-ms-transform:translate(-50%, 0);
+	margin-left: 50%;
+}
+
+.sobre{
+	width: 100%;
+	background-color: white;
+	padding-top: 100px;
+}
+.sobre .imageLoja{
+	float: left;
+	max-width: 40%;
+	margin-bottom: 100px;
+
+}
+.imageLoja img{
+	width: 800px;
+}
+.sobre .sobreLoja{
+	color: #011936;
+	float: right;
+	max-width: 40%;
+	margin-right: 5%;
+	text-align: center;
+	line-height: 2;
+}
+.sobreLoja h2{
+	font-size: 30px;
+}
+.sobreLoja p{
+	text-align: justify;
+	margin-top: 50px;
+
+}
+
+
+/*Contato---------------------*/
+.contato{
+	padding: 30px 0;
+	width: 100%;
+	height: auto;
+	background: #011936;
+}
+.input-box{
+	margin-top: 10px;
+}
+.form{
+	float: left;
+	color: white;
+	justify-content: center;
+	width: 100%;
+	width: 40%;
+}
+.dados{
+	margin-top: 20px;
+}
+.form span{
+	font-weight: bold;
+	font-size: 20px;
+}
+.dados input{
+	background: transparent;
+	border: 2px solid black;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+}
+
+.bottom input{
+	background-color: transparent;
+	width: 200px;
+	height: 50px;
+	border: 1px solid black;
+	cursor: pointer;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.input-box{
+	margin: 20px 10%;
+}
+.mensage{
+	margin-top: 20px;
+}
+.mensage textarea{
+	background: transparent;
+	border: 2px solid black;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	height: 260px;
+	resize: none;
+}
+
+.mapa{
+	float: right;
+	margin-right: 5%;
+	margin-top: 100px;
+}
+.mapa iframe{
+	width: 900px;
+}
+
+footer{
+	padding: 30px 50px 20px 50px;
+	background-color: #011936;
+	border-top: 2px solid black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
+}
+footer div{
+	text-align: center;
+	align-self: flex-end;
+}
+footer img{
+	width: 100px;
+}
